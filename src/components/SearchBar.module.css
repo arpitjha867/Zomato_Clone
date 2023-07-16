@@ -1,0 +1,47 @@
+.mainContainer{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width: 700px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    font-size: medium;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    border: 1px solid rgb(232, 232, 232);
+
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    gap: 8px;
+}
+
+.inputSearchBar{
+    border: none;
+    outline: none;
+}
+
+
+.division{
+    width: 0px;
+    height: 50%;
+    border: .05rem solid rgb(207, 207, 207)
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    width: 420px;
+    justify-content: space-evenly;
+}
+
+.inputSearchBox{
+    margin-left: 10px;
+    width: 370px;
+    border: none;
+
+}

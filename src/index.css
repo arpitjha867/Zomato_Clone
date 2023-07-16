@@ -1,13 +1,411 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Okra, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Okra, Helvetica, sans-serif;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  color: #ffff;
+  color : rgb(255, 255, 255);
+  margin-bottom: 60px;
+}
+
+.background{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 95%;
+  object-fit: cover;
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 1.4s ease 0s;
+}
+
+.navOptions{
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: 200;
+
+}
+
+
+.item1{
+  padding: 17px 0px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  align-items: center;
+  margin: 0px auto;
+  width: 87%;
+}
+
+.item2{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.getApp{
+  width: 115px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logo{
+  font-size: 80px;
+  font-weight: bolder;
+  
+}
+
+.title{
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  margin: 15px 0px 0px;
+}
+
+.option{
+  cursor: pointer;
+}
+
+.searchBar{
+  margin:  15px 0px 0px;
+}
+
+.orderOptions{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.services{
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  border: rgb(232, 232, 232) solid 1px;
+  transition: transform 300ms ease 0s;
+  margin-bottom: 70px;
+}
+
+.services:hover{
+  transform: scale(1.05);
+}
+
+.innerContent{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color : rgb(79, 79, 79);
+  padding: 10px 20px 10px 20px;
+  
+}
+
+.imagesOrder{
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.headContent{
+  font-size: 20px;
+  color: #363636;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.tailContent{
+  font-size: 16px;
+  color: #4f4f4f;
+  font-weight: 500;
+  margin: 10px 0px 10px 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.collections{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.titleCollections{
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0px 0px 0px 0px;
+}
+
+.subHeading{
+  display: flex;
+  align-items:baseline;
+  gap: 100px;
+  
+}
+
+.subHeadingText{
+  font-size: 18px;
+  font-weight: 300;
+  margin: 15px 0px 30px 0px;
+}
+
+.linkCollections{
+  font-size: 16px;
+  color: #E04536;
+}
+
+.lower{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.places{
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+
+.textPlace{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.imgPlaces{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  
+}
+
+.textPlaceHead{
+  color: white;
+  z-index: 10;
+  margin: 0px 0px 0px 0px;
+}
+
+.textPlaceSubHead{
+  z-index: 10;
+  color: white;
+  margin: 0px 0px 0px 0px;
+}
+
+.anchorPlaces{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: baseline; */
+  /* align-items: end; */
+  padding: 10px 10px 10px 10px;
+}
+
+.mainContAcord{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.accordionHead{
+  font-size: 30px;
+  font-weight: 500;
+  color: #363636;
+
+}
+
+
+.accordionContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(232, 232, 232);
+  padding: 15px 15px 15px 15px;
+  /* gap: 800px; */
+  width: 1000px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.accordionText{
+  font-weight: 400;
+  color: rgb(28, 28, 28);
+  font-size: 20px;
+  line-height: 26px;
+  /* width: 800px; */
+  margin: 0px 0px 0px 0px;
+}
+
+.mainFooterContainer{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 20px 20px;
+  background: rgb(248, 248, 248);
+}
+
+.containerz1{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.options1{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.btnsFooter{
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(181, 181, 181);
+  padding: 6px 6px 6px 6px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: rgb(28, 28, 28);
+  cursor: pointer;
+}
+
+.indianFlag{
+  background: url("https://b.zmtcdn.com/data/webuikit/0687ff554c86e36cda9498212e221af61563274375.png") -141px 0px no-repeat;
+}
+
+.containerz2{
+  display: flex;
+  margin-top: 45px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.containerzItem{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.containerzInnerItem{
+
+}
+
+.itemzHead{
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+
+.itemzHeadOpts{
+  font-size: 14px;
+  color: #696969;
+  margin: 7px 0px 7px 0px;
+}
+
+.appLinksBanner{
+  height: 45px;
+  width: 150px;
+}
+
+.itemContsSocial{
+  cursor: pointer;
+}
+
+.appLinksBanner{
+  cursor: pointer;
+}
+.lineDivision{
+  width: 70%;
+  margin-top: 20px;
+  border-width: 1px 0px 0px;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image: initial;
+  border-top-style: solid;
+  border-top-color: rgb(207, 207, 207);
+}
+
+.mainContainer{
+  background-color: white;
+  display: flex;
+  height: 50px;
+  width: 700px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  font-size: medium;
+
+}
+
+.container1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  gap: 8px;
+}
+
+.inputSearchBar{
+  border: none;
+  outline: none;
+}
+
+
+.division{
+  width: 0px;
+  height: 50%;
+  border: .05rem solid rgb(207, 207, 207)
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  width: 420px;
+  justify-content: space-evenly;
+}
+
+.inputSearchBox{
+  margin-left: 10px;
+  width: 370px;
+  border: none;
+
 }
