@@ -1,0 +1,4 @@
+.foodCardHover:hover{
+    border: 0.1rem solid rgb(232, 232, 232);
+    box-shadow: rgba(28, 28, 28, 0.15) 0px 0.8rem 6.4rem;
+}
