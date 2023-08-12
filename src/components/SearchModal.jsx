@@ -4,6 +4,7 @@ import {cities} from '../data/cities.js'
 function SearchModal({onClose}) {
     const [citiesData,setCityData] = useState(cities);
     const [query,setQuery] = useState("")
+    const [selectedData,setSelectedData] = useState([]);
     const filteredItems = useMemo(() => { return  citiesData.filter(item => {
       return item.toLowerCase().includes(query.toLowerCase())
     })
@@ -130,6 +131,8 @@ function SearchModal({onClose}) {
                             }}
                           >
                             <input
+                              value={data}
+                              // {...selectedData.includes(data) ? "checked" : ""}
                               type="checkbox"
                               aria-checked="false" 
                               style={{
@@ -139,6 +142,11 @@ function SearchModal({onClose}) {
                                 border: "2px solid rgb(156, 156, 156)",
                                 marginRight:"10px"
                               }}
+                              onChange={e =>{ 
+                                console.log("The dish clicked is : ",e.target.value)
+                                setSelectedData(e.target.value)
+                              }
+                            }
                             />
                             {data}
                           </label>

@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './FoodCard.module.css'
 
 function FoodCard(props) {
-  const {name , rating , dishes , avg_spend , delivery_time} = props;
+  const {id,name , rating , dishes , avg_spend , delivery_time} = props;
   return (
     <>
-      <div className={styles.foodCardHover} style={{display:"flex",flexDirection:"column",padding:"10px 10px 10px 10px" ,borderRadius:"20px",cursor:"pointer"}}>
+      <div id={id} className={styles.foodCardHover} style={{display:"flex",flexDirection:"column",padding:"10px 10px 10px 10px" ,borderRadius:"20px",cursor:"pointer"}}>
             <img style={{height: "230px",width: "320px",borderRadius: "15px"}} src="https://b.zmtcdn.com/data/pictures/chains/3/143/cb4822bd0ecf5e677eea7956c6ebe926_o2_featured_v2.jpg" alt="food" />
             <div style={{display:'flex',justifyContent:"space-between" ,marginTop:"7px",alignItems:"center"}} >
               <div style={{fontSize:"17px",color:"#1C1C1C",fontWeight:"500"}}>
