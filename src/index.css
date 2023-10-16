@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: Okra, Helvetica, sans-serif;
@@ -408,4 +412,13 @@ a{
   width: 370px;
   border: none;
 
+}
+
+.w-75--lg {
+  @media (min-width: 1400px) {
+    width: 75%;
+  }
+  @media (max-width: 1399px) {
+    width: 100%;
+  }
 }

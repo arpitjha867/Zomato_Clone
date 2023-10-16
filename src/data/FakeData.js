@@ -1,4 +1,4 @@
-export const fakeDB = [
+const fakeDB = [
     {
       name: "Sushi Haven",
       rating: 4.4,
@@ -565,4 +565,9 @@ export const fakeDB = [
   ];
   
  
-  
+  for (let i = 0; i < fakeDB.length; i++) {
+    fakeDB[i].id = i + 1;
+    fakeDB[i].amount = 1;
+}
+
+export default fakeDB;

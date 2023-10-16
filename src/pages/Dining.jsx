@@ -2,8 +2,8 @@ import React from 'react'
 
 function Dining() {
   return (
-    <div>
-        dining page
+    <div className='text-6xl'>
+        Under Construction , Please see Order online page
     </div>
   )
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 function NightLife() {
   return (
-    <div>
-      This is the night life page
+    <div className='text-6xl'>
+        Under Construction , Please see Order online page
     </div>
   )
 }

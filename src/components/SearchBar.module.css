@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 35%;
     gap: 8px;
 }
 
@@ -40,8 +40,9 @@
 }
 
 .inputSearchBox{
+    color: black;
     margin-left: 10px;
     width: 370px;
     border: none;
-
+    outline: none;
 }
